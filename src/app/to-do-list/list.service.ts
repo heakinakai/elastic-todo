@@ -12,7 +12,7 @@ export class ListService {
 
   constructor() {
     this.test.cat.indices({
-      format: 'json'
+      format: 'ymal'
     }, (error, response) => {
       console.log(response)
     });
