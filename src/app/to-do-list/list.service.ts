@@ -11,9 +11,9 @@ export class ListService {
   });
 
   constructor() {
-    this.test.count({
-      index: 'filedata'
-    }, function (error, response) {
+    this.test.cat.indices({
+      format: 'json'
+    }, (error, response) => {
       console.log(response)
     });
   }
